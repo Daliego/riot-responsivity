@@ -1,0 +1,70 @@
+M - Riot Games - Flex | Media Queries [Weekly]
+max-width: 556px ate 763px (mobileView)
+
+min-width: 764px ate 970 (tablet view)
+
+min-width: 970px ate 10928(notebooksVieew)
+
+min-width: 1026px (bigger tvs or more)
+
+
+header: {
+	TOPNAVBAR: {
+		- Três divs
+		- flex direction row.
+		- as alterações da responsividade envolvem ocultação de texto em um botão de select mais, e posterior ocultação da barra de navegação em um só botão de select.		
+	}
+	new_game_inside_header: {
+		- justify-content: flex-start,
+		- flex-direction:collumn
+		- Após o primeiro breakpoint passa a ocupar o centro da tela com um justify-content: center
+	}
+}
+
+body {
+	novidades: {
+	- titulo
+	- 2 divs com flex direction row 
+	- Segunda div com um um flex-direction: collumn
+	- após o breakpoint as duas divs são organizadas em um flex-direction row e a segunda div com um display grid de dois em dois.
+}	
+
+	OurGames: {
+	- Display grid de dois em dois, e que se não tiver sengundo card, o card em um linha só é alinhada no centro. 
+	- após o primeiro breakpoint os cards recebem um display flex com flex-direction collumn. 
+	}
+	
+	Esports: {
+	- flex-direction: row
+	- após o primeiro breakpoint os cards são organizados com flex-direction column
+	}
+
+	Entretenimentos: {
+	- flex-direction: row
+	- após o primeiro breakpoint os cards são organizados com flex-direction column
+	}
+	
+	RiotForge: {
+	- um carrossel com display block;	
+	- após o primeiro breakpoint os cards param de dividir a linha em três e passa a ocupar um por vez.	
+	}
+
+	HiringSection: {
+		headerDiv: ocupa 50% da tela {
+	- div: {
+		flex-direction collumn
+		div: {
+			- com dois items com flex-directio: row
+		}
+		bottão explorar correior
+	}
+}
+		secondDiV: ocupa os outros 50% da tela
+	}
+}	
+
+Footer {
+	- div ocupa uma flex direction row
+	- com os breackpoints a sessão passa a usar display grid para organizar os cards.
+}
+		bottão explorar
